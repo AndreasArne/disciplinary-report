@@ -21,6 +21,8 @@ Before running the script you need to do the following:
 
 1. Activate the booklet and press enter.
 
+1. Install requirements.txt
+
 1. Run the script.
 
 1. Profit!
