@@ -54,3 +54,5 @@ Read about [report process](https://bthse.sharepoint.com/Sidor/Anm%C3%A4lan.aspx
 # TO-DO
 
 - Download kursplan from [bth.se](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1531). Should be able to use the `request` module and send GET request.
+
+- Make booklet click buttons. So it can go from startpage to right page. And also possibly find course info from ladok.
