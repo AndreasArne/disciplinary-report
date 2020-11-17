@@ -1,0 +1,17 @@
+{
+    "teachers": {
+        "<acronym>": {
+            "name": "<name>",
+            "phone": "<phonenumber",
+            "section": "<work institution>"
+        }
+    },
+    "courses": {
+        "<course code>": {
+            "name": "<course name>",
+            "points": "<worth points>",
+            "part_name": "<part name of course, if have. Othwerwise set to empty string>"
+        }
+    },
+    "text":"<An example text that can be sent to the student. End it with {teacher} and it will insert the teachers name.>"
+}
