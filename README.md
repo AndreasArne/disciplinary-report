@@ -35,11 +35,11 @@ The report expects you to have/create the following files:
 
 - \<student-acronym\>-ladok.pdf # ladok utdrag for student
 
-- <course-code>-kursplan.pdf # course plan
+- \<course-code\>-kursplan.pdf # course plan
 
 - Beskrivning av ärende.pdf # description of the incident
 
-- <assignment>.pdf # file or link to the assignment. File is named as you entered as argument.
+- \<assignment\>.pdf # file or link to the assignment. File is named as you entered as argument.
 
 
 
