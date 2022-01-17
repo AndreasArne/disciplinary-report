@@ -29,7 +29,7 @@ Before running the script you need to do the following:
 
 
 
-The script produces a .docx file in `output/` that needs to be converted to a pdf and signed before turning it in. You can use [edusign](https://edusign.sunet.se/open/login) instead of printing and scanning it.
+The script produces a .docx file in `output/` that needs to be converted to a pdf and signed before turning it in. You can use [edusign](https://edusign.sunet.se/) instead of printing and scanning it.
 
 The report expects you to have/create the following files:
 
