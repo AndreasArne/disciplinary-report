@@ -60,7 +60,7 @@ def insert_offense_data(table, data):
 def insert_appendix_data(table, args):
     cells = table.column_cells(0)
     stud_ladok = args[3] + "-ladok.pdf"
-    courseplan = args[1] + "-kursplan.pdf"
+    courseplan = f"kursplan-{args[1]}.pdf"
     description = "Beskrivning av ärende.pdf"
     instructions = args[4]
     extras = args[5]
@@ -131,6 +131,7 @@ def main():
         '"""',
         admin_data["text"].format(teacher=admin_data["teachers"][args[2]]["name"]),
         '"""',
+        f"Link for downloading courseplan https://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod={args[1]}"
         "",
         sep="\n"
     )
