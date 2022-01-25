@@ -22,27 +22,14 @@ javascript: (function () {
     let postcity = dd4[4].innerText;
     let country = dd4[5].innerText;
 
-    let openthis = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400px,height=300px,top="+(10)+",left="+(500));
     let html = `
-<textarea id="copy" style="width:300px;height:100px">
 ${lastname}, ${firstname}\n
 ${pnr}\n
 ${street}\n
 ${postnr} ${postcity} ${country}\n
 ${phonenr}
-</textarea><br>
     `;
-    openthis.document.body.innerHTML = html;
-    let btn = openthis.document.createElement("button");
-    btn.innerHTML = "Click to copy and close";
-    btn.style.width="200px";
-    btn.style.height="20px";
-    btn.setAttribute("id", "copy-btn");
-    btn.addEventListener("click", function() {
-        openthis.document.getElementById("copy").select();
-        openthis.document.execCommand("copy");
-        openthis.close();
-    });
-    openthis.document.body.appendChild(btn);
-    openthis.document.getElementById("copy-btn").focus();
+
+    navigator.clipboard.writeText(html);
+
 })();
