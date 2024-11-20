@@ -107,7 +107,7 @@ def main():
     doc = Document("template/report.docx")
     insert_student_data(doc.tables[0])
 
-    admin_data = json.load(open("local-data.json"), encoding="UTF-8")
+    admin_data = json.load(open("local-data.json"))
     ordered_data = order_data(
         args[0],
         args[1],

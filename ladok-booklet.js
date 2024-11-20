@@ -12,10 +12,10 @@ javascript: (function () {
     let firstname = dd1[3].innerText;
     let birthdata = dd1[4].innerText;
 
-    let reg = /[^\s]+/;
+    let reg = /(.+) \d{4}-/;
 
     let mail = reg.exec(dd2[0].innerText);
-    let phonenr = reg.exec(dd3[0].innerText);
+    let phonenr = reg.exec(dd3[0].innerText)[1];
 
     let street = dd4[2].innerText;
     let postnr = dd4[3].innerText;
